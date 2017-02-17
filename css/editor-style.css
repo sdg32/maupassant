@@ -1,0 +1,44 @@
+body {
+    background-color:#FFF;
+    color:#444;
+    font-size:14px;
+    font-family:"TIBch", "Classic Grotesque W01", "Helvetica Neue", Arial, "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+mark {
+    padding: 3px 3px 3px 5px;
+    background: #fffdd1;
+}
+pre, code {
+    padding: 2px 4px;
+    background: #f8f8f8;
+    font-family: Menlo, Monaco, Consolas, "Lucida Console", "Courier New", monospace;
+    font-size:.92857em;
+}
+pre {
+    margin: 2em 0;
+    overflow:auto;
+    background: none;
+    border: 1px solid #ddd;
+}
+pre code {
+    padding: 0;
+}
+blockquote {
+    margin:2em 1.5em;
+    padding-left:1.5em;
+    border-left:4px solid #ddd;
+    color:#777;
+}
+blockquote:first-letter {
+    font-size:2.5em;
+    line-height: 1.15;
+    padding: 0 7px 0 0;
+    color: #666;
+    font-weight:bolder;
+    float:left;
+}
+h1, h2, h3 {
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+}
