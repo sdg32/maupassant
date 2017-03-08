@@ -63,16 +63,22 @@ function maupassant_widgets_init() {
 add_action( 'widgets_init', 'maupassant_widgets_init' );
 
 /**
- * Enqueue scripts and styles.
+ * Enqueue scripts.
  */
 function maupassant_scripts() {
-    wp_enqueue_style( 'normalize', get_template_directory_uri() . '/css/normalize.css' );
-    wp_enqueue_style( 'maupassant-style', get_stylesheet_uri() );
-
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
         wp_enqueue_script( 'comment-reply' );
     }
 }
 add_action( 'wp_enqueue_scripts', 'maupassant_scripts' );
+
+/**
+ * Print styles
+ */
+function maupassant_styles() {
+    wp_enqueue_style( 'normalize', get_template_directory_uri() . '/css/normalize.css' );
+    wp_enqueue_style( 'maupassant-style', get_stylesheet_uri() );
+}
+add_action( 'wp_print_styles', 'maupassant_styles' );
 
 require get_template_directory() . '/inc/tpls.php';
