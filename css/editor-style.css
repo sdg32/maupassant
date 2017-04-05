@@ -1,44 +1,107 @@
 body {
-    background-color:#FFF;
-    color:#444;
-    font-size:14px;
-    font-family:"TIBch", "Classic Grotesque W01", "Helvetica Neue", Arial, "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, sans-serif;
+    background-color: #FFF;
+    color: #444;
+    line-height: 1.715;
+    font-size: 15px;
+    font-family: "TIBch", "Classic Grotesque W01", "Helvetica Neue", Arial, "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
 mark {
     padding: 3px 3px 3px 5px;
     background: #fffdd1;
 }
+
 pre, code {
-    padding: 2px 4px;
     background: #f8f8f8;
     font-family: Menlo, Monaco, Consolas, "Lucida Console", "Courier New", monospace;
-    font-size:.92857em;
+    font-size: .92857em;
 }
+
 pre {
     margin: 2em 0;
-    overflow:auto;
+    overflow: auto;
     background: none;
     border: 1px solid #ddd;
+    max-height: 320px;
 }
+
 pre code {
-    padding: 0;
+    padding: 0.5em 1em;
+    display: block;
 }
+
+p code {
+    display: inline;
+    margin: 0 5px;
+    padding: 3px 5px;
+}
+
+p {
+    margin: 0 0 1.234em;
+}
+
+img {
+    padding: 1em 0;
+    max-width: 100%;
+}
+
+ul {
+    overflow: auto;
+    padding: 0.5em 2.4em;
+    border-radius: 3px;
+    margin: 1.8em 0;
+}
+
+ul li {
+    text-indent: 0.5em;
+}
+
 blockquote {
-    margin:2em 1.5em;
-    padding-left:1.5em;
-    border-left:4px solid #ddd;
-    color:#777;
+    margin: 2em 1.5em;
+    padding-left: 1.5em;
+    border-left: 4px solid #ddd;
+    color: #777;
 }
+
 blockquote:first-letter {
-    font-size:2.5em;
+    font-size: 2.5em;
     line-height: 1.15;
     padding: 0 7px 0 0;
     color: #666;
-    font-weight:bolder;
-    float:left;
+    font-weight: bolder;
+    float: left;
 }
+
 h1, h2, h3 {
-    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h2, h3 {
+    margin: 1.4em 0 1.1em;
+    font-size: 1.28571em;
+}
+
+a {
+    border-bottom: 1px solid #ddd;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+a:hover {
+    border-bottom-color: transparent;
+}
+
+a img {
+    background: #fff;
+    position: relative;
+    bottom: -4px;
+}
+
+hr {
+    margin: 2.1em auto;
+    width: 200px;
+    border-top: 1px solid #ccc;
+    position: relative;
 }
