@@ -1,3 +1,6 @@
+### 改动
+评论区样式有些异常，对其进行修正。
+
 # Maupassant
 
 A WordPress Theme ported from the Typecho Theme by Cho.
