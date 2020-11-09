@@ -479,14 +479,15 @@ textarea {
 }
 
 #comment-form label {
-    display: block;
+    height: 36px;
     color: #888;
     position: absolute;
     margin: 7px;
+    padding-top: 2px;
 }
 
 #comment-form input {
-    padding: 8px 6px 8px 45px;
+    padding: 8px 6px 8px 75px;
     height: 36px;
     border: solid 1px #D4D4D4;
     background: #fdfdfd;
