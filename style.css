@@ -478,23 +478,40 @@ textarea {
     padding-top: 5px;
 }
 
-#comment-form label {
-    display: block;
-    color: #888;
-    position: absolute;
-    margin: 7px;
+#comment-form p {
+    margin: 12px 0;
 }
 
-#comment-form input {
-    padding: 8px 6px 8px 45px;
-    height: 36px;
+#comment-form label {
+    color: #888;
+}
+
+#comment-form .comment-form-author input,
+#comment-form .comment-form-email input,
+#comment-form .comment-form-url input,
+#comment-form .comment-form-comment textarea {
     border: solid 1px #D4D4D4;
     background: #fdfdfd;
     color: #555;
+    display: block;
+    width: 100%;
+    margin-top: 4px;
 }
 
-#comment-form textarea {
-    padding: 8px 6px 8px 45px;
+@media only screen and (min-width: 768px) {
+    #comment-form .comment-form-author,
+    #comment-form .comment-form-email {
+        width: calc(50% - 12px);
+        float: left;
+    }
+
+    #comment-form .comment-form-email {
+        margin-left: 24px;
+    }
+
+    #comment-form .comment-form-comment {
+        margin-bottom: 0;
+    }
 }
 
 button.submit {
