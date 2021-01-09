@@ -63,6 +63,22 @@ function maupassant_widgets_init() {
 add_action( 'widgets_init', 'maupassant_widgets_init' );
 
 /**
+ * Register settings.
+ */
+function maupassant_settings() {
+    add_option( 'zh_cn_l10n_icp_num', '', '', 'yes' );
+    add_settings_field( 
+        'zh_cn_l10n_icp_num',
+        __( 'ICP Number', 'maupassant' ),
+        'maupassant_zh_cn_l10n_icp_num_callback',
+        'general',
+        'default',
+    );
+    register_setting( 'general', 'zh_cn_l10n_icp_num' );
+}
+add_action( 'admin_init', 'maupassant_settings' );
+
+/**
  * Enqueue scripts.
  */
 function maupassant_scripts() {
@@ -80,5 +96,14 @@ function maupassant_styles() {
     wp_enqueue_style( 'maupassant-style', get_stylesheet_uri() );
 }
 add_action( 'wp_print_styles', 'maupassant_styles' );
+
+function maupassant_zh_cn_l10n_icp_num_callback() {
+    printf(
+        '<input id="%s" name="%s" class="regular-text" type="text" value="%s">', 
+        'zh_cn_l10n_icp_num', 
+        'zh_cn_l10n_icp_num', 
+        esc_attr( get_option( 'zh_cn_l10n_icp_num' ) ),
+    );
+}
 
 require get_template_directory() . '/inc/tpls.php';
