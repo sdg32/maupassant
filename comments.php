@@ -9,34 +9,25 @@
                 __( 'No Comments', 'maupassant' ),
                 __( '1 Comments', 'maupassant' ),
                 __( '% Comments', 'maupassant' )
-            ); ?>
+            ) ?>
         </h3>
 
-        <?php maupassant_comments_pagination( array(
-            'prev_text'             => __( 'Previous', 'maupassant' ),
-            'next_text'             => __( 'Next', 'maupassant' ),
-            'screen_reader_text'    => ' ',
-            'type'                  => 'list',
-        ) ); ?>
-
         <ol class="comment-list">
-            <?php
-                wp_list_comments( array(
-                    'type'      => 'comment'
-                ) );
-            ?>
+            <?php wp_list_comments( array(
+                'type' => 'comment',
+            ) ) ?>
         </ol>
 
         <?php maupassant_comments_pagination( array(
-            'prev_text'             => __( 'Previous', 'maupassant' ),
-            'next_text'             => __( 'Next', 'maupassant' ),
-            'screen_reader_text'    => ' ',
-            'type'                  => 'list',
-        ) ); ?>
+            'prev_text' => __( 'Previous', 'maupassant' ),
+            'next_text' => __( 'Next', 'maupassant' ),
+            'screen_reader_text' => ' ',
+            'type' => 'list',
+        ) ) ?>
     <?php endif; ?>
 
     <?php comment_form( array(
-        'id_form'           => 'comment-form',
-        'submit_button'     => '<button name="%1$s" type="submit" id="%2$s" class="%3$s">%4$s</button>'
+        'id_form' => 'comment-form',
+        'submit_button' => '<button name="%1$s" type="submit" id="%2$s" class="%3$s">%4$s</button>',
     ) ) ?>
 </div>

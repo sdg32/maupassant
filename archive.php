@@ -10,21 +10,20 @@
                 ?>
             </header>
             <?php
-                while ( have_posts() ) :
-                    the_post();
-                    get_template_part( 'tpl-parts/content', get_post_format() );
-                endwhile;
+            while ( have_posts() ) :
+                the_post();
+                get_template_part( 'template-parts/content', get_post_format() );
+            endwhile;
 
-                the_posts_pagination( array(
-                    'prev_text'             => __( 'Previous', 'maupassant' ),
-                    'next_text'             => __( 'Next', 'maupassant' ),
-                    'screen_reader_text'    => ' ',
-                    'type'                  => 'list',
-                ) );
+            the_posts_pagination( array(
+                'prev_text' => __( 'Previous', 'maupassant' ),
+                'next_text' => __( 'Next', 'maupassant' ),
+                'screen_reader_text' => ' ',
+                'type' => 'list',
+            ) );
             ?>
         <?php else : ?>
-            <?php get_template_part( 'tpl-parts/content', 'none' ); ?>
-
+            <?php get_template_part( 'template-parts/content', 'none' ); ?>
         <?php endif; ?>
     </div>
 </div>

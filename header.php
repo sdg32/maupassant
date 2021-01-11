@@ -27,16 +27,17 @@
             <?php if ( has_nav_menu( 'primary' ) ) : ?>
                 <div>
                     <?php wp_nav_menu( array(
-                        'theme_location'    => 'primary',
-                        'container'         => 'nav',
-                        'container_class'   => 'clearfix',
-                        'container_id'      => 'nav-menu'
+                        'theme_location' => 'primary',
+                        'container' => 'nav',
+                        'container_class' => 'clearfix',
+                        'container_id' => 'nav-menu',
                     ) ); ?>
                 </div>
             <?php endif; ?>
         </div>
     </div>
 </header>
+
 <div id="body">
     <div class="container">
         <div class="col-group">

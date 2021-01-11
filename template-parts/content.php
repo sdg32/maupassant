@@ -1,5 +1,6 @@
 <article class="post" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <?php maupassant_post_thumbnail(); ?>
+
     <header<?php if ( is_sticky() ) : ?> class="sticky-post"<?php endif; ?>>
         <?php if ( is_sticky() ) : ?><span class="sticky"></span><?php endif; ?>
         <?php if ( is_single() ) : ?>
@@ -12,9 +13,10 @@
             </h2>
         <?php endif; ?>
     </header>
+
     <ul class="post-meta">
-        <li><?php the_time( get_option( 'date_format' ) ); ?></li>
-        <li><?php echo ( get_the_tag_list(' ', ', ') ); ?></li>
+        <li><?php the_time( get_option( 'date_format' ) ) ?></li>
+        <li><?php echo get_the_tag_list( ' ', ', ' ) ?></li>
         <li class="comment-count">
             <?php comments_popup_link(
                 __( 'No Comments', 'maupassant' ),
@@ -23,13 +25,14 @@
             ); ?>
         </li>
     </ul>
+
     <div class="post-content">
         <?php
         the_content(
-                sprintf(
-                    __( 'Continue reading %s', 'maupassant' ),
-                    the_title( '<span class="screen-reader-text">', '</span>', false )
-                )
+            sprintf(
+                __( 'Continue reading %s', 'maupassant' ),
+                the_title( '<span class="screen-reader-text">', '</span>', false )
+            )
         );
         wp_link_pages();
         ?>
