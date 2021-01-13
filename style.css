@@ -331,21 +331,24 @@ textarea {
 }
 
 .post-content p {
-    margin: 0 0 1.234em;
+    margin: 0 0 1em 0;
 }
 
 .post-content img {
     padding: 1em 0;
+    height: auto;
 }
 
-.post-content ul {
+.post-content ul,
+.post-content ol {
     overflow: auto;
-    padding: .5em 2.4em;
+    padding: 0 0 1em 2.4em;
     border-radius: 3px;
-    margin: 1.8em 0;
+    margin: 0;
 }
 
-.post-content ul li {
+.post-content ul li,
+.post-content ol li {
     text-indent: .5em;
 }
 
@@ -498,20 +501,18 @@ textarea {
     margin-top: 4px;
 }
 
-@media only screen and (min-width: 768px) {
-    #comment-form .comment-form-author,
-    #comment-form .comment-form-email {
-        width: calc(50% - 12px);
-        float: left;
-    }
+#comment-form .comment-form-author,
+#comment-form .comment-form-email {
+    width: calc(50% - 12px);
+    float: left;
+}
 
-    #comment-form .comment-form-email {
-        margin-left: 24px;
-    }
+#comment-form .comment-form-email {
+    margin-left: 24px;
+}
 
-    #comment-form .comment-form-comment {
-        margin-bottom: 0;
-    }
+#comment-form .comment-form-comment {
+    margin-bottom: 0;
 }
 
 button.submit {
@@ -595,7 +596,7 @@ textarea.textarea {
 }
 
 #footer {
-    padding: .8em 0 3.6em;
+    padding: .8em 0;
     line-height: 1.5;
     color: #999;
 }
@@ -762,6 +763,16 @@ img.alignright {
     #secondary {
         display: none;
     }
+
+    #comment-form .comment-form-author,
+    #comment-form .comment-form-email {
+        width: 100%;
+        float: none;
+    }
+
+    #comment-form .comment-form-email {
+        margin-left: 0;
+    }
 }
 
 @media print, screen and (max-width: 680px) {
@@ -828,6 +839,12 @@ img.alignright {
     }
 }
 
+@media print {
+    #comment-form {
+        display: none;
+    }
+}
+
 .about {
     width: 100%;
 }
@@ -859,8 +876,6 @@ img.alignright {
     padding: 0.5em 0;
 }
 
-.gallery-caption {
-}
-
-.bypostauthor {
+a.tag-cloud-link {
+    white-space: nowrap;
 }
