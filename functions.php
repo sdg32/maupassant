@@ -107,5 +107,5 @@ function maupassant_enqueue_styles() {
 
 add_action( 'wp_enqueue_scripts', 'maupassant_enqueue_styles' );
 
-require get_template_directory() . '/inc/settings.php';
+require get_template_directory() . '/inc/general-settings.php';
 require get_template_directory() . '/inc/template-functions.php';
