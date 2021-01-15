@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: maupassant\n"
-"POT-Creation-Date: 2021-01-11 23:51+0800\n"
-"PO-Revision-Date: 2021-01-11 23:51+0800\n"
+"POT-Creation-Date: 2021-01-15 11:59+0800\n"
+"PO-Revision-Date: 2021-01-15 12:18+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: zh_CN\n"
@@ -22,41 +22,41 @@ msgstr ""
 msgid "Oops! That page can&rsquo;t be found."
 msgstr "该页面未找到。"
 
-#: archive.php:19 comments.php:22 index.php:13 search.php:19
+#: comments.php:16 inc/template-functions.php:92
 msgid "Previous"
 msgstr "上一页"
 
-#: archive.php:20 comments.php:23 index.php:14 search.php:20
+#: comments.php:17 inc/template-functions.php:93
 msgid "Next"
 msgstr "下一页"
 
-#: comments.php:9 template-parts/content.php:22
-msgid "No Comments"
-msgstr "没有评论"
-
-#: comments.php:10 template-parts/content.php:23
-msgid "1 Comments"
-msgstr "1 条评论"
-
-#: comments.php:11 template-parts/content.php:24
-msgid "% Comments"
-msgstr "% 条评论"
-
-#: functions.php:38
+#: functions.php:56
 msgid "Primary Menu"
 msgstr "主菜单"
 
-#: functions.php:50
+#: functions.php:68
 msgid "Widget Area"
 msgstr "挂件区域"
 
-#: functions.php:52
+#: functions.php:70
 msgid "Add widgets here to appear in your sidebar."
 msgstr "将挂件加入此处来在侧边栏中显示。"
 
 #: inc/settings.php:10
 msgid "ICP Number"
 msgstr "ICP 备案号"
+
+#: inc/template-functions.php:81
+msgid "No Comments"
+msgstr "没有评论"
+
+#: inc/template-functions.php:82
+msgid "1 Comment"
+msgstr "1 条评论"
+
+#: inc/template-functions.php:83
+msgid "% Comments"
+msgstr "% 条评论"
 
 #: search.php:8
 #, php-format
@@ -87,7 +87,7 @@ msgstr "抱歉，没有符合您搜索条件的结果，请换其他关键词再
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for."
 msgstr "我们可能无法找到您需要的内容。"
 
-#: template-parts/content.php:33
+#: template-parts/content.php:29
 #, php-format
 msgid "Continue reading %s"
 msgstr "继续阅读 %s"

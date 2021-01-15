@@ -2,11 +2,13 @@
 Theme Name: Maupassant
 Theme URI: https://github.com/sdg32/maupassant
 Author: cho, grafting by sdg32
-Author URI: https://chopstack.com
+Author URI: https://www.sdg32.xyz
 Description: A simple wordpress theme
+Tested up to: 5.6
+Requires PHP: 5.6
 Version: 1.1
-License: GNU General Public License
-License URI: http://www.gnu.org/licenses/gpl-3.0.html
+License: MIT License
+License URI: https://opensource.org/licenses/MIT
 Tags: blog, two-columns, right-sidebar, custom-background, custom-menu, editor-style, sticky-post, threaded-comments, translation-ready
 Text Domain: maupassant
  */
@@ -251,7 +253,7 @@ textarea {
 }
 
 .post {
-    padding: 25px 0 15px;
+    padding: 25px 0;
 }
 
 .sticky-post .post-title {
@@ -297,7 +299,6 @@ textarea {
 
 .comment-count {
     float: right;
-    margin-top: -25px;
 }
 
 .post-content {
@@ -305,26 +306,31 @@ textarea {
     line-height: 1.715;
     color: #444;
     padding-top: 27px;
+    overflow: hidden;
 }
 
 .page-content {
     padding-top: 40px;
 }
 
-.post-content h3, .post-content h2 {
+.post-content h3,
+.post-content h2 {
     margin: 1.4em 0 1.1em;
 }
 
-.post-content pre, .comment-content pre {
+.post-content pre,
+.comment-content pre {
     max-height: 320px;
 }
 
-.post-content pre code, .comment-content pre code {
+.post-content pre code,
+.comment-content pre code {
     padding: .5em 1em;
     display: block;
 }
 
-.post-content p code, .comment-content p code {
+.post-content p code,
+.comment-content p code {
     display: inline;
     margin: 0 5px;
     padding: 3px 5px;
@@ -350,6 +356,19 @@ textarea {
 .post-content ul li,
 .post-content ol li {
     text-indent: .5em;
+}
+
+.post-password-form input[type=submit] {
+    display: block;
+    margin-top: 2px;
+    padding: 0 9px;
+    cursor: pointer;
+    min-width: 64px;
+    height: 30px;
+    line-height: 25px;
+    outline: none;
+    border: 1px solid #ddd;
+    background: #fff;
 }
 
 .archive-title {
@@ -401,7 +420,8 @@ textarea {
     border-bottom-color: #D26911;
 }
 
-.comment-list, .comment-list ol {
+.comment-list,
+.comment-list ol {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -612,11 +632,13 @@ textarea.textarea {
     padding: 10px 40px 10px 0;
 }
 
-.post-content h2, .comment-content h2 {
+.post-content h2,
+.comment-content h2 {
     font-size: 1.28571em;
 }
 
-.post-content img, .comment-content img {
+.post-content img,
+.comment-content img {
     max-width: 100%;
 }
 
@@ -626,14 +648,16 @@ textarea.textarea {
     bottom: -4px;
 }
 
-.post-content hr, .comment-content hr {
+.post-content hr,
+.comment-content hr {
     margin: 2.1em auto;
     width: 200px;
     border-top: 1px solid #ccc;
     position: relative;
 }
 
-.aligncenter, div.aligncenter {
+.aligncenter,
+div.aligncenter {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -878,4 +902,10 @@ img.alignright {
 
 a.tag-cloud-link {
     white-space: nowrap;
+}
+
+.gallery-caption {
+}
+
+.bypostauthor {
 }
